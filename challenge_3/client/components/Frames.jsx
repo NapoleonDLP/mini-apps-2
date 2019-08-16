@@ -3,7 +3,7 @@ import Rows from './Rows.jsx';
 
 function Frames (props) {
   return (
-    <div styles="display: flex;" id="frames">
+    <div id="frames">
       <Rows />
     </div>
   )
