@@ -15,17 +15,17 @@ class Rows extends React.Component {
   render() {
     return (
       <div id="all-rows">
-        <div className="rows" styles="flex-direction: row;" id="backRow">
-          {this.state.rowFour.map((pin) => <Frame pin={pin} />)}
+        <div className="rows" id="backRow">
+          {this.state.rowFour.map((pin, id) => <Frame key={id} pin={pin} />)}
         </div>
-        <div className="rows" styles="flex-direction: row;" id="backMid">
-          {this.state.rowThree.map((pin) => <Frame pin={pin} />)}
+        <div className="rows" id="backMid">
+          {this.state.rowThree.map((pin, id) => <Frame key={id} pin={pin} />)}
         </div>
-        <div className="rows" styles="flex-direction: row;" id="frontMid">
-          {this.state.rowTwo.map((pin) => <Frame pin={pin} />)}
+        <div className="rows" id="frontMid">
+          {this.state.rowTwo.map((pin, id) => <Frame key={id} pin={pin} />)}
         </div>
-        <div className="rows" styles="flex-direction: row;" id="frontRow">
-          {this.state.rowOne.map((pin) => <Frame pin={pin} />)}
+        <div className="rows" id="frontRow">
+          {this.state.rowOne.map((pin, id) => <Frame key={id} pin={pin} />)}
         </div>
       </div>
     )
