@@ -1,3 +1,21 @@
 #frames {
+  display: inline;
   color: orange;
+};
+
+#all-rows {
+  display: inline-flex;
+  height: 400px;
+  width: 400px;
+};
+
+.rows {
+  background-color: aquamarine;
+  color: blueviolet;
+  border: 2px;
+  display: inline;
+  height: 100px;
+  width: 400px;
+  margin: auto;
 }
+
